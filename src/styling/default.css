@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import 'bootstrap/dist/css/bootstrap.min.css';
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700&display=swap");
 .header {
@@ -180,6 +181,18 @@ body {
 body .position-fixed {
   top: 0;
   z-index: 10;
+}
+
+.select-control {
+  position: relative;
+}
+.select-control::after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  right: 12px;
+  bottom: 8px;
 }
 
 .content {

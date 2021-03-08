@@ -32,6 +32,19 @@ body{
     }
 }
 
+.select-control {
+    position: relative;
+
+    &::after {
+        content: "\f078";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: absolute;
+        right: 12px;
+        bottom: 8px;
+    }
+}
+
 .content {
     padding: 50px 0 300px;
 }
