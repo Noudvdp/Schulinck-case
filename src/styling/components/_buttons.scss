@@ -1,0 +1,28 @@
+//!importants because for some reason bootstrap is overwriting it
+button {
+    border: none!important;
+    display: block!important;
+    color: #007ac3!important;
+    font-weight: bold!important;
+    background: none!important;
+    transition: 0.3s ease-in-out!important;
+    font-size: 1rem!important;
+    position: relative!important;
+
+    &::after {
+        content: "";
+        width: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        height: 2px;
+        background: #007ac3;
+        transition: 0.3s ease-in-out;
+    }
+
+    &:hover {
+        &::after {
+            width: 100%;
+        }
+    }
+}

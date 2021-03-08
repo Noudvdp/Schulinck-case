@@ -1,3 +1,189 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700&display=swap");
+.header {
+  height: 80px;
+  background: #fff;
+  border-bottom: 2px solid #dadada;
+}
+.header > .container {
+  height: 100%;
+}
+.header > .container > .row {
+  height: 100%;
+}
+.header > .container > .row > .col-6 {
+  height: 100%;
+}
+.header .logo {
+  max-height: 45px;
+}
+.header .profile img {
+  height: 20px;
+  margin-top: -10px;
+  margin-right: 5px;
+}
+.header .profile span {
+  color: #757575;
+}
 
+.nav {
+  height: 60px;
+  background: #fff;
+  border-bottom: 2px solid #dadada;
+}
+.nav > .container {
+  height: 100%;
+}
+.nav > .container > .row {
+  height: 100%;
+}
+.nav > .container > .row > .col-6 {
+  height: 100%;
+}
+.nav .nav-item {
+  display: flex;
+  position: relative;
+  align-items: center;
+  text-decoration: none;
+  color: #474747;
+  text-align: center;
+  padding: 0 20px;
+  height: 100%;
+  transition: 0.3s ease-in-out;
+}
+.nav .nav-item::after {
+  content: "";
+  width: 0;
+  height: 5px;
+  position: absolute;
+  background: #005b92;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease-in-out;
+}
+.nav .nav-item.active {
+  color: #005b92;
+  font-weight: bold;
+  background: #f2f8fc;
+}
+.nav .nav-item.active::after {
+  width: 100%;
+}
+.nav .nav-item:hover {
+  text-decoration: none;
+  color: #005b92;
+  background: #f2f8fc;
+  font-weight: bold;
+}
+.nav .nav-item:hover::after {
+  width: 100%;
+}
+.nav .company {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-right: 5px;
+  color: #474747;
+}
+@media (max-width: 992px) {
+  .nav .company {
+    font-size: 1rem;
+  }
+}
+.nav .city {
+  font-size: 1rem;
+  color: #474747;
+  margin-bottom: -5px;
+}
+
+section {
+  background: #fff;
+  border: 2px solid #ededed;
+  padding: 30px 15px;
+}
+section h4 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #757575;
+  margin-left: 0.5rem;
+}
+
+.footer-top {
+  color: #fff;
+  background: #757575;
+  padding: 50px 0 70px;
+}
+.footer-top h4 {
+  font-size: 1.1rem;
+}
+.footer-top a {
+  display: block;
+  width: max-content;
+  color: #fff;
+  font-weight: 300;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+.footer-top a:hover {
+  color: #005b92;
+}
+.footer-top .socials a i {
+  margin-right: 20px;
+  font-size: 1.2rem;
+}
+
+.footer-bottom {
+  color: #fff;
+  background: #5d5d5d;
+  font-weight: 300;
+  padding: 35px 0;
+}
+
+button {
+  border: none !important;
+  display: block !important;
+  color: #007ac3 !important;
+  font-weight: bold !important;
+  background: none !important;
+  transition: 0.3s ease-in-out !important;
+  font-size: 1rem !important;
+  position: relative !important;
+}
+button::after {
+  content: "";
+  width: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  height: 2px;
+  background: #007ac3;
+  transition: 0.3s ease-in-out;
+}
+button:hover::after {
+  width: 100%;
+}
+
+* {
+  font-family: "Fira Sans", sans-serif;
+}
+*:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+body {
+  padding: 140px 0 0 0 !important;
+  position: relative;
+  background: #f6f6f6 !important;
+}
+body .position-fixed {
+  top: 0;
+  z-index: 10;
+}
+
+.content {
+  padding: 50px 0 300px;
+}
 
 /*# sourceMappingURL=default.css.map */

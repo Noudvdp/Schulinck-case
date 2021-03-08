@@ -1,5 +1,8 @@
 import React, { Component } from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from "../components/header";
+import Nav from "../components/nav";
+import Tickets from "../components/tickets";
+import Footer from "../components/footer";
 
 class Index extends Component {
     constructor(props) {
@@ -14,9 +17,16 @@ class Index extends Component {
     render() {
 
         return (
-            <div className="container">
-                test
-            </div>
+            <>
+                <div className="position-fixed w-100">
+                    <Header />
+                    <Nav />
+                </div>
+                <div className="content">
+                    <Tickets />
+                </div>
+                <Footer />
+            </>
         );
     }
 

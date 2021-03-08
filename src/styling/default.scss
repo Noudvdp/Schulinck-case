@@ -1,2 +1,37 @@
-@import "components/colors";
+//Bootstrap
+@import 'bootstrap/dist/css/bootstrap.min.css';
 
+//Components
+@import "components/colors";
+@import "components/header";
+@import "components/nav";
+@import "components/tickets";
+@import "components/footer";
+@import "components/buttons";
+
+//Font
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Fira Sans', sans-serif;
+
+    &:focus {
+        outline: none!important;
+        box-shadow: none!important;
+    }
+}
+
+body{
+    padding: 140px 0 0 0!important;
+    position: relative;
+    background: #f6f6f6!important;
+
+    .position-fixed {
+        top: 0;
+        z-index: 10;
+    }
+}
+
+.content {
+    padding: 50px 0 300px;
+}

@@ -1,0 +1,80 @@
+@import "colors";
+
+.nav {
+    height: 60px;
+    background: $white;
+    border-bottom: 2px solid #dadada;
+
+    > .container {
+        height: 100%;
+
+        > .row {
+            height: 100%;
+
+            > .col-6 {
+                height: 100%;
+            }
+        }
+    }
+
+    .nav-item {
+        display: flex;
+        position: relative;
+        align-items: center;
+        text-decoration: none;
+        color: #474747;
+        text-align: center;
+        padding: 0 20px;
+        height: 100%;
+        transition: 0.3s ease-in-out;
+
+        &::after {
+            content: "";
+            width: 0;
+            height: 5px;
+            position: absolute;
+            background: #005b92;
+            bottom: 0;
+            left: 0;
+            transition: 0.3s ease-in-out;
+        }
+
+        &.active {
+            color: #005b92;
+            font-weight: bold;
+            background: #f2f8fc;
+
+            &::after {
+                width: 100%;
+            }
+        }
+
+        &:hover {
+            text-decoration: none;
+            color: #005b92;
+            background: #f2f8fc;
+            font-weight: bold;
+
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+
+    .company {
+        font-weight: bold;
+        font-size: 1.4rem;
+        margin-right: 5px;
+        color: #474747;
+        
+        @media (max-width: 992px) {
+            font-size: 1rem;
+        }
+    }
+
+    .city {
+        font-size: 1rem;
+        color: #474747;
+        margin-bottom: -5px;
+    }
+}

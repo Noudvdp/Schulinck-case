@@ -1,0 +1,41 @@
+@import "colors";
+
+.footer-top {
+    color: $white;
+    background: #757575;
+    padding: 50px 0 70px;
+
+    h4 {
+        font-size: 1.1rem;
+    }
+
+    a {
+        display: block;
+        width: max-content;
+        color: $white;
+        font-weight: 300;
+        font-size: 0.9rem;
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            color: #005b92;
+        }
+    }
+
+    .socials {
+        a {
+            i {
+                margin-right: 20px;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    color: $white;
+    background: #5d5d5d;
+    font-weight: 300;
+    padding: 35px 0;
+}

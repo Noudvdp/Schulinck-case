@@ -1,0 +1,15 @@
+@import "colors";
+
+section {
+    background: $white;
+    border: 2px solid #ededed;
+    padding: 30px 15px;
+
+    h4 {
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #757575;
+        margin-left: .5rem;
+    }
+}
