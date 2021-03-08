@@ -78,8 +78,6 @@ class Tickets extends Component {
             return ticket.subject
         });
 
-        console.log(reducedTickets);
-
         for (const [key, value] of Object.entries(reducedTickets)) {
             if( Number(key) === 0 ) {
                 countArray.push({
@@ -110,8 +108,6 @@ class Tickets extends Component {
                 });
             }
         }
-
-        console.log(countArray)
 
         this.setState({
             count : countArray
@@ -318,7 +314,7 @@ class Tickets extends Component {
                 tickets: tickets.sort((a, b) => parseFloat(a.status) - parseFloat(b.status)),
                 newTicket: false,
             })
-            
+
             setTimeout( function (){
                 that.countSubjectTickets();
             }, 500)
@@ -406,9 +402,9 @@ class Tickets extends Component {
                                 {
                                     this.state.count.map( subject => {
                                        return(
-                                            <tr>
+                                            <tr key={ subject.id }>
                                                 <td>{ subject.text }</td>
-                                                <td>{ subject.count } x</td>
+                                                <td>{ subject.count } x</td> 
                                             </tr>
                                        )
                                     })
